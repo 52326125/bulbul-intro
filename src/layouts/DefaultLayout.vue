@@ -1,12 +1,10 @@
 <script setup lang="ts">
 import DefaultNav from '@/layouts/components/DefaultNav.vue'
-// import BannerImg from '@/assets/images/banner.png'
 </script>
 <template>
   <div class="layout-wrapper">
     <DefaultNav />
     <div class="layout-content-wrapper">
-      <!-- <img :src="BannerImg" class="layout-banner" /> -->
       <div class="layout-intro">
         <h1 class="layout-intro__title">白頭翁 (Chinese bulbul)</h1>
         <span class="layout-intro__description">
@@ -50,7 +48,6 @@ import DefaultNav from '@/layouts/components/DefaultNav.vue'
     line-height: 24px
 
 .page-wrapper
-  // height: 100%
   background-color: $background-primary
 
 @media (max-width: $mobile)
