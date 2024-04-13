@@ -32,8 +32,8 @@ import DefaultNav from '@/layouts/components/DefaultNav.vue'
   background-image: url(@/assets/images/banner.png)
   background-size: cover
   background-repeat: no-repeat
-  background-position: 70% 40%
-  padding-top: 500px
+  background-position: 85% 100%
+  justify-content: end
 
 .layout-intro
   text-align: end
@@ -50,11 +50,18 @@ import DefaultNav from '@/layouts/components/DefaultNav.vue'
     line-height: 24px
 
 .page-wrapper
-  height: 100%
+  // height: 100%
   background-color: $background-primary
 
 @media (max-width: $mobile)
-  .layout-wrapper-inner
-    max-width: 315px
-    margin: 0 30px
+  .layout-wrapper
+    flex-direction: column
+    height: unset
+
+  .layout-intro
+    &__title
+      line-height: 50px
+
+  .layout-content-wrapper
+    background-position: 50% -330px
 </style>

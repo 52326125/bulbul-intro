@@ -36,8 +36,15 @@ const descriptions: IDescription[] = [
 </template>
 <style scoped lang="sass">
 .content-wrapper
-  padding: 58px 50px 0 50px
+  padding: 58px 50px 84px 50px
   display: flex
   justify-content: space-between
   gap: 79px
+
+@media (max-width: $mobile)
+  .content-wrapper
+    padding: 50px 36px 72px 50px
+    gap: 50px
+    flex-direction: column
+    align-items: center
 </style>
